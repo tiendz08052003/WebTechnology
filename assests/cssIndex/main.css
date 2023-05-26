@@ -1,0 +1,883 @@
+.container {
+
+}
+
+/*HEADER*/
+
+/*Phần mở top của header*/
+
+.header {
+    position: relative;
+}
+
+.header__top {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+
+.header__top__child {
+    display: flex;
+    justify-content: space-between;
+    line-height: 22px;
+    font-size: 1.3rem;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.header__top__child__left {
+}
+
+.header__top__child__right {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.header__top__child__right div + div{
+    margin-left: 20px;
+}
+
+.header__top__child__left,
+.header__top__child__right__local,
+.header__top__child__right__order,
+.header__top__child__right__shop, 
+.header__top__child__right__account {
+    padding: 8px 0;
+    opacity: 0.6;
+}
+
+.header__top__child__left {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__top__child__right__child
+{
+    position: relative;
+}
+
+.header__top__child__right__child::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    background-color: #adabab;
+}
+
+.header__top__child__right__child:first-child::before {
+    content: none;
+}
+
+.header__top__child__right__local {
+
+}
+
+.header__top__child__right__order {
+
+}
+
+.header__top__child__right__shop {
+
+}
+
+.header__top__child__right__account {
+
+}
+
+.header__top__child__right__local__cotent, 
+.header__top__child__right__order__cotent, 
+.header__top__child__right__shop__cotent, 
+.header__top__child__right__account__cotent{
+    margin-left: 5px;
+}
+
+
+.header__top__child__right__local__cotent {
+
+}
+
+.header__top__child__right__order__cotent {
+
+}
+
+.header__top__child__right__shop__cotent {
+
+}
+
+.header__top__child__right__account__cotent {
+
+}
+
+/*Phần mở middle của header*/
+
+.header__middle {
+    width: 100%;
+}
+
+.header__middle__child {
+    display: flex; 
+    padding: 28px 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+/* Phần logo */
+.header__middle__child__logo {
+    padding: 0 15px;
+}
+
+/* Phần search */
+.header__middle__child__search {
+    display: flex;
+    flex: 1;
+    padding: 0 0 0 15px;
+    border-radius: 2.2rem;
+    border: 2px solid #fed700;
+}
+
+.header__middle__child__search__child{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+
+.header__middle__child__search__sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    width: 15rem;
+    padding: 0 10px;
+}
+
+.header__middle__child__search__sort--icon {
+    font-size: 1.3rem;
+}
+
+.header__middle__child__search__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    background-color: #fed700;
+    border-top-right-radius: 2.2rem;
+    border-bottom-right-radius: 2.2rem;
+}
+
+.header__middle__child__search__search--icon{
+    font-size: 2rem;
+}
+
+/* Phần select */
+.header__middle__child__selec {
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    opacity: 0.7;
+
+}
+
+.header__middle__child__selec__reload {
+
+}
+
+.header__middle__child__selec__heart {
+
+}
+
+.header__middle__child__selec__acc {
+
+}
+
+.header__middle__child__selec__cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.header__middle__child__selec__cart::before {
+    position: absolute;
+    content: "1";
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: calc(100% - 22px);
+    left: 12px;
+    border-radius: 50%;
+    background-color: #fed700;
+    font-weight: 700;
+    opacity: 1 !important;
+}
+
+.header__middle__child__selec__cart__content {
+    line-height: 2.2rem;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.header__middle__child__selec__reload,
+.header__middle__child__selec__heart,
+.header__middle__child__selec__acc,
+.header__middle__child__selec__cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 35px;
+}
+
+.header__middle__child__selec__reload:hover .header__middle__child__selec__reload__hover,
+.header__middle__child__selec__heart:hover .header__middle__child__selec__heart__hover,
+.header__middle__child__selec__acc:hover .header__middle__child__selec__acc__hover,
+.header__middle__child__selec__cart:hover .header__middle__child__selec__cart__hover {
+    display: flex;
+} 
+
+.header__middle__child__selec__icon {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+.header__middle__child__selec__reload__hover::before,
+.header__middle__child__selec__heart__hover::before,
+.header__middle__child__selec__acc__hover::before,
+.header__middle__child__selec__cart__hover::before{
+    content: "";
+    position: absolute;
+    top: calc(0% - 15px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 10px solid black;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid transparent;
+}
+
+.header__middle__child__selec__reload__hover {
+    position: absolute;
+    right: -150%;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 10px 15px;
+    font-weight: 700;
+    z-index: 999;
+    transition: all 500ms ease;
+    display: none;
+    
+}
+
+.header__middle__child__selec__heart__hover {
+    position: absolute;
+    right: -133%;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 10px 15px;
+    font-weight: 700;
+    z-index: 999;
+    transition: all 500ms ease;
+    display: none;
+    
+}
+
+.header__middle__child__selec__acc__hover {
+    position: absolute;
+    width: 120px;
+    right: -220%;
+    bottom: -100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 10px 15px;
+    font-weight: 700;
+    z-index: 999;
+    transition: all 500ms ease;
+    display: none;
+    
+}
+
+.header__middle__child__selec__cart__hover {
+    position: absolute;
+    right: 20%;
+    bottom: -120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    padding: 10px 15px;
+    font-weight: 700;
+    z-index: 999;
+    transition: all 500ms ease;
+    display: none;
+    
+}
+
+
+/* Phần top của header */
+.header__footer {
+    width: 100%;
+    background-color: #fed700;
+}
+ 
+.header__footer__child {
+    position: relative;
+}
+
+
+.header__footer__child__selec {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    padding: 0 15px;
+}
+
+.header__footer__child__selec__home {
+}
+
+.header__footer__child__selec__home--content {
+
+}
+
+.header__footer__child__selec__home--icon {
+
+}
+
+.header__footer__child__selec__tv {
+
+}
+
+.header__footer__child__selec__tv--content {
+
+}
+
+.header__footer__child__selec__tv--icon {
+
+}
+
+.header__footer__child__selec__smartPhone {
+
+}
+
+.header__footer__child__selec__smartPhone--content {
+
+}
+
+.header__footer__child__selec__smartPhone--icon {
+
+}
+
+.header__footer__child__selec__laptop {
+
+}
+
+.header__footer__child__selec__laptop--content {
+
+}
+
+.header__footer__child__selec__laptop--icon {
+
+}
+
+.header__footer__child__selec__gadget {
+
+}
+
+.header__footer__child__selec__gadget--content {
+
+}
+
+.header__footer__child__selec__gadget--icon {
+
+}
+
+.header__footer__child__selec__camera {
+
+}
+
+.header__footer__child__selec__camera--content {
+
+}
+
+.header__footer__child__selec__camera--icon {
+
+}
+
+.header__footer__child__selec__movie {
+
+}
+
+.header__footer__child__selec__movie--content {
+
+}
+
+.header__footer__child__selec__movie--icon {
+
+}
+
+.header__footer__child__selec__home,
+.header__footer__child__selec__tv,
+.header__footer__child__selec__smartPhone,
+.header__footer__child__selec__laptop,
+.header__footer__child__selec__gadget,
+.header__footer__child__selec__camera,
+.header__footer__child__selec__movie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    line-height: 2.2rem;
+}
+
+.header__footer__child__selec__home,
+.header__footer__child__selec__tv,
+.header__footer__child__selec__smartPhone,
+.header__footer__child__selec__laptop,
+.header__footer__child__selec__gadget,  
+.header__footer__child__selec__camera{
+    border-right: 1px solid #e7c400;
+}
+
+.header__footer__child__selec__smartPhone__header,
+.header__footer__child__selec__laptop__header,
+.header__footer__child__selec__gadget__header,
+.header__footer__child__selec__camera__header,
+.header__footer__child__selec__movie__header,
+.header__footer__child__selec__tv__header {
+    display: flex;
+    align-items: center;
+}
+
+
+.header__footer__child__selec__home--content,
+.header__footer__child__selec__tv__header--content,
+.header__footer__child__selec__smartPhone__header--content,
+.header__footer__child__selec__laptop__header--content,
+.header__footer__child__selec__gadget__header--content,
+.header__footer__child__selec__camera__header--content,
+.header__footer__child__selec__movie__header--content {
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.header__footer__child__selec__tv__header--icon,
+.header__footer__child__selec__smartPhone__header--icon,
+.header__footer__child__selec__laptop__header--icon,
+.header__footer__child__selec__gadget__header--icon,
+.header__footer__child__selec__camera__header--icon,
+.header__footer__child__selec__movie__header--icon {
+    height: 2.2rem;
+    font-size: 1.6rem;
+    margin-left: 5px;
+}
+
+.paddingClick {
+    padding-bottom: 15px;
+}
+
+
+/* Phần hover */
+
+.header__footer__child__selec__home__list__child {
+    width: 25%;
+}
+
+.header__footer__child__selec__home__list__child__list {
+    
+}
+
+.header__footer__child__selec__home__list__child__list + .header__footer__child__selec__home__list__child__list {
+    margin-top: 20px;
+}
+
+.header__footer__child__selec__home__list__child__list__child {
+    padding: 5px 0;
+    opacity: 0.7;
+}
+
+.header__footer__child__selec__home__list__child__list__child:first-child {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.header__footer__child__selec__home__list__child__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+} 
+
+/* reponsive mobile */
+
+.header__footer__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0;
+}   
+
+.header__footer__mobile__root {
+    display: flex;
+    align-items: center;
+}
+
+.header__footer__mobile__root__logo {
+
+}
+
+.header__footer__mobile__root__logo__child {
+    width: 118px;
+    padding: 8px 0;
+}
+
+.header__footer__mobile__root__icon {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+    margin-right: 10px;
+}
+
+.header__footer__mobile__user {
+    display: flex;
+    align-items: center;
+}
+
+.header__footer__mobile__user__glass {
+    text-align: center;
+}
+
+.header__footer__mobile__user__acc {
+
+}
+
+.header__footer__mobile__user__cart {
+
+}
+
+.header__footer__mobile__user__glass--icon{
+    font-weight: 100;
+}
+
+.header__footer__mobile__user__acc--icon{
+    margin-left: 20px;
+}
+
+.header__footer__mobile__user__cart--icon {
+    margin-left: 20px;
+}
+
+.header__footer__mobile__user__glass__icon
+{
+
+}
+
+.header__footer__mobile__user__exit__icon {
+    display: none;
+}
+
+.header__footer__mobile__user__exit__icon--child {
+
+}
+
+.header__footer__mobile__user__glass__icon--child,
+.header__footer__mobile__user__acc--icon,
+.header__footer__mobile__user__cart--icon,
+.header__footer__mobile__user__exit__icon--child {
+    font-size: 22px;
+    width: 22px;
+    height: 22px;
+}
+
+.header__footer__mobile__user__glass__input {
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    z-index: 999;
+    background-color: #fff;
+    display: none;
+}
+
+.header__footer__mobile__user__glass__input__child {
+    width: 100%;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    outline: none;
+}
+
+.header__footer__mobile__user__glass__input {
+    
+}
+
+.header__footer__mobile__user__glass__input__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+}
+
+.header__footer__mobile__user__glass__input__icon--child {
+    font-size: 2.2rem;
+
+}
+/* reponsive mobile */
+
+
+
+/*BODY*/
+
+.body {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 60vh;
+}
+
+.banner__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+
+
+.banner__img__list {
+    display: -webkit-box;
+    width: 100%;
+    height: 100%;
+}
+
+.banner__img__list__child {
+}
+
+.banner__img__list__child1 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/banner4.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner__img__list__child2 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/banner2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner__img__list__child3 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/banner6.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+.banner__img--cicle {
+    position: absolute;
+    bottom: 5%;
+    left: 48%;
+    display: flex;
+}
+
+.active.banner__img--cicle1,
+.active.banner__img--cicle2,
+.active.banner__img--cicle3 {
+    transition: all 1s ease;
+    background-color: #fed700;
+}
+
+.banner__img--cicle1 {
+    width: 15px;
+    height: 15px;
+    background-color: #adabab;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.banner__img--cicle2 {
+    width: 15px;
+    height: 15px;
+    background-color: #adabab;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.banner__img--cicle3 {
+    width: 15px;
+    height: 15px;
+    background-color: #adabab;
+    border-radius: 50%;
+}
+
+.banner__img__Back {
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    background-color: RGBA( 240, 255, 255, 0.5);
+    color: RGBA( 105, 105, 105, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__img__Back:hover {
+    background-color: RGBA( 95, 158, 160, 0.8);
+    color: RGBA( 0, 0, 0, 1);
+}
+
+.banner__img__Back__left {
+    font-size: 1.6rem;
+}
+
+.banner__img__Next {
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    background-color: RGBA( 240, 255, 255, 0.5);
+    color: RGBA( 105, 105, 105, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner__img__Next:hover {
+    background-color: RGBA( 95, 158, 160, 0.8);
+    color: RGBA( 0, 0, 0, 1);
+}
+
+.banner__img__Next__right {
+    font-size: 1.6rem;
+}
+
+
+
+/* sản phẩm  */
+
+.product {
+}
+
+.product__child {
+}
+
+.product__child__content {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 16px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.product__child__content__img { 
+    text-align: center;
+    width: 60%;
+}
+
+.product__child__content__img--child {
+    width: 200px;
+}
+
+.product__child__content__info {
+
+}
+
+.product__child__content__info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.product__child__content__info--top {
+    opacity: 0.6;
+    line-height: 2.4rem;
+    flex: 1;
+    font-weight: 300;
+}
+
+.product__child__content__info--bottom {
+    display: flex;
+    align-items: center;
+}
+
+.product__child__content__info--price {
+
+}
+
+/* xem thêm */
+
+.see {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.see__content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: #fed700;
+    border-radius: 2.2rem;
+}
+
+.see--icon {
+    margin-left: 10px;
+    font-weight: 100;
+    opacity: 0.5;
+}

@@ -1,0 +1,442 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html body *::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper{
+    width: 1230px;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+}
+
+ul li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.HideList {
+    display: none !important;
+}
+
+.ShowList {
+    display: inline-block !important;
+}   
+
+.ShowList--flex {
+    display: flex !important;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+/* reponsive */
+.grid {
+    width: 1230px;
+    padding: 0 15px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+@media screen and (max-width: 798px) {
+
+    .grid__column-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .grid__column-12-12{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;    
+    }
+
+    /* body page */
+    .singleProduct__left {
+        display: none;
+    }
+    .singleProduct__right__child__left__img {
+        padding-top: 50%;
+        background-size: contain;
+    }
+    /* body page */
+
+    /* header page */
+    .header__top,
+    .header__middle__child {
+        display: none !important;
+    }
+
+    .header__footer__mobile {
+        display: block;
+    }
+
+    .header--mobile::before {
+        position: fixed;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(0,0,0,.7);
+        z-index: 9999;
+    }
+
+    .header__footer__child {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        overflow-y: auto;
+        z-index: 99999;
+        display: none;
+    }
+
+    .header__footer__child__selec {
+        flex-direction: column;
+        align-items: start !important;
+        padding: 0 !important;
+        height: 100%;
+    }
+
+    .header__footer__child__selec__home, 
+    .header__footer__child__selec__tv, 
+    .header__footer__child__selec__smartPhone, 
+    .header__footer__child__selec__laptop, 
+    .header__footer__child__selec__gadget, 
+    .header__footer__child__selec__camera,
+    .header__footer__child__selec__movie {
+        width: 100%;
+        justify-content: space-between !important;
+        align-items: start !important;
+        flex-direction: column;
+        border-right: none !important;
+        opacity: 0.7;
+        font-weight: 500;
+        padding: 15px 10px !important;
+        border-bottom: 1px solid #ddd;
+        text-align: start;
+    }
+
+    .header__footer__child__selec__home__list {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        display: none;
+        padding: 10px 0 0 15px;
+    }
+
+    .header__footer__child__selec__home__list__child {
+        width: 100% !important;
+    }
+
+    .header__footer__child__selec__home__list__child:nth-child(2),
+    .header__footer__child__selec__home__list__child:nth-child(3),
+    .header__footer__child__selec__home__list__child:nth-child(4),
+    .header__footer__child__selec__home__list__child:last-child {
+        display: none !important;
+    }
+    /* header page */
+    /* footer page */
+    .tiket {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .tiket__input {
+        display: flex;
+    }
+
+    .tiket__input__child {
+        width: 68%;
+        padding: 12px 32px;
+        font-size: 1.6rem;
+        border-top-left-radius: 2.2rem;
+        border-bottom-left-radius: 2.2rem;
+        transform: translateX(3px);
+        outline: none;
+        border: none;
+    }
+
+    .details__care {
+        display: none;
+    } 
+    /* footer page */
+}
+
+@media screen and (min-width: 798px) and (max-width: 1230px) {
+
+    .grid__column-12 {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 100%;
+    }
+
+    .grid__column-12-5{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 41.66667%;    
+    }
+    
+    .grid__column-12-7{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 58.33334%;    
+    }
+
+    
+    /* body page */
+    .singleProduct__left {
+        display: none;
+    }
+
+    .singleProduct__right__child__left__img {
+        padding-top: 100%;
+    }
+    /* body page */
+
+
+    /* header page */
+    .header__top,
+    .header__middle__child {
+        display: none !important;
+    }
+    
+    .header__footer__mobile {
+        display: block;
+    }
+
+    .header--mobile::before {
+        position: fixed;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(0,0,0,.7);
+        z-index: 9999;
+    }
+
+    .header__footer__child {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        overflow-y: auto;
+        z-index: 99999;
+        display: none;
+    }
+
+    .header__footer__child__selec {
+        flex-direction: column;
+        align-items: start !important;
+        padding: 0 !important;
+        height: 100%;
+    }
+
+    .header__footer__child__selec__home, 
+    .header__footer__child__selec__tv, 
+    .header__footer__child__selec__smartPhone, 
+    .header__footer__child__selec__laptop, 
+    .header__footer__child__selec__gadget, 
+    .header__footer__child__selec__camera,
+    .header__footer__child__selec__movie {
+        width: 100%;
+        justify-content: space-between !important;
+        align-items: start !important;
+        flex-direction: column;
+        border-right: none !important;
+        opacity: 0.7;
+        font-weight: 500;
+        padding: 0 !important;
+        border-bottom: 1px solid #ddd;
+        text-align: start;
+    }
+
+    .header__footer__child__selec__home,
+    .header__footer__child__selec__smartPhone__header,
+    .header__footer__child__selec__laptop__header,
+    .header__footer__child__selec__gadget__header,
+    .header__footer__child__selec__camera__header,
+    .header__footer__child__selec__movie__header,
+    .header__footer__child__selec__tv__header {
+        padding: 15px 10px !important;
+    }
+
+    .header__footer__child__selec__home__list {
+        position: relative;
+        visibility: visible;
+        opacity: 1;
+        display: none;
+        padding: 0 0 10px 20px;
+    }
+
+    .header__footer__child__selec__home__list__child {
+        width: 100% !important;
+    }
+
+    .header__footer__child__selec__home__list__child:nth-child(2),
+    .header__footer__child__selec__home__list__child:nth-child(3),
+    .header__footer__child__selec__home__list__child:nth-child(4),
+    .header__footer__child__selec__home__list__child:last-child {
+        display: none !important;
+    }
+    /* header page */
+    /* footer page */
+    .tiket {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px 0;
+    }
+
+    .tiket__input {
+    }
+
+    .tiket__input__child {
+        width: 68%;
+        padding: 12px 32px;
+        font-size: 1.6rem;
+        border-top-left-radius: 2.2rem;
+        border-bottom-left-radius: 2.2rem;
+        transform: translateX(3px);
+        outline: none;
+        border: none;
+    }
+    /* footer page */
+}
+
+
+@media screen and (min-width: 1230px) {
+
+    .grid__column-2 {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 16.6667%;
+    }
+    
+    .grid__column-10 {
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 83.3334%;
+    }
+    
+    .grid__column-10-4{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 40%;    
+    }
+    
+    .grid__column-10-6{
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 60%;    
+    }
+
+    /* body page */
+    .singleProduct__right__child__left__img {
+        padding-top: 100%;
+    }
+    /* body page */
+
+
+    /* header page */
+    .header__footer__mobile {
+        display: none !important;
+    }
+
+    .header__footer__child {
+        display: block !important;
+    }
+
+    /* Phần hover */
+
+    .header__footer__child__selec__home__list {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    padding: 35px 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .15s ease-in;
+    z-index: 999;
+    }
+
+    .header__footer__child__selec__smartPhone:hover .header__footer__child__selec__home__list,
+    .header__footer__child__selec__laptop:hover .header__footer__child__selec__home__list,
+    .header__footer__child__selec__gadget:hover .header__footer__child__selec__home__list,
+    .header__footer__child__selec__camera:hover .header__footer__child__selec__home__list,
+    .header__footer__child__selec__movie:hover .header__footer__child__selec__home__list,
+    .header__footer__child__selec__tv:hover .header__footer__child__selec__home__list {
+        transform: scaleY(1)!important;
+        opacity: 1;
+        visibility: visible;
+    } 
+
+    /* Phần hover */
+
+    /* header page */
+
+    /* footer page */
+    .tiket {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .tiket__input {
+        flex: 1;
+        text-align: end;    
+    }
+
+    .tiket__input__child {
+        width: 45%;
+        padding: 12px 32px;
+        font-size: 1.6rem;
+        border-top-left-radius: 2.2rem;
+        border-bottom-left-radius: 2.2rem;
+        transform: translateX(3px);
+        outline: none;
+        border: none;
+    }
+    /* footer page */
+}
